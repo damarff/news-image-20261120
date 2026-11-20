@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the news-image-20261120 entry: a one-page visual newspaper cover
+"""Draw the news-image-20261120 entry: a one-page visual newspaper cover
 summing up Friday 20 November 2026. Drawn with PIL from scratch; every
 word is typed here, so the text is sharp and typo-free.
 
