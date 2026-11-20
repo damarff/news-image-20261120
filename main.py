@@ -12,6 +12,10 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 OUT = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
+SRC = HERE / "entry.png"
+
+if not SRC.is_file():
+    raise SystemExit(f"entry.png not found beside {__file__}")
 
 OUT.mkdir(parents=True, exist_ok=True)
-shutil.copyfile(HERE / "entry.png", OUT / "entry.png")
+shutil.copyfile(SRC, OUT / "entry.png")
